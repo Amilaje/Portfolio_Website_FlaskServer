@@ -11,7 +11,10 @@ from faq_chatbot import FAQChatbot, ChatQueryRequest, ChatResponse, RAG_SOURCES
 
 app = Flask(__name__)
 # CORS 설정 추가 (모든 출처 허용)
-CORS(app) 
+# CORS(app) 
+CORS(app, resources={r"/*": {"origins": [
+    "http://portfolio-website-frontend-s3.s3-website.us-east-2.amazonaws.com"
+]}})
 
 # 전역 챗봇 인스턴스 생성
 CHATBOT = FAQChatbot()

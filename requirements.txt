@@ -1,0 +1,13 @@
+# 웹 서버 및 유효성 검사
+flask
+flask-cors
+pydantic
+
+# LLM 및 RAG 기능 (LangChain Ecosystem)
+langchain
+langchain-core
+langchain-text-splitters
+langchain-community
+langchain-openai
+tiktoken # OpenAI 임베딩 및 LLM 사용 시 내부적으로 요구됨
+chromadb # Chroma 벡터스토어를 사용
